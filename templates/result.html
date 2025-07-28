@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="glass-card">
+        <h1>🧪 Prediction Result</h1>
+        <img src="{{ image_path }}" alt="Uploaded Image" class="preview-img">
+
+        <div class="result-text">
+            <h2>Predicted: <span>{{ prediction }}</span></h2>
+        </div>
+
+        <div class="confidence-bar-container">
+            <div class="confidence-bar" style="width: {{ confidence }}%;">{{ confidence }}%</div>
+        </div>
+
+        <a href="/" class="back-btn">Try Another</a>
+    </div>
+</body>
+</html>

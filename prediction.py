@@ -4,7 +4,7 @@ from tensorflow.keras.preprocessing import image
 import matplotlib.pyplot as plt
 
 # 🔁 Load the saved model
-model = tf.keras.models.load_model("potato_disease.h5")
+model = tf.keras.models.load_model("potato_disease_model.h5")
 
 # 🏷️ Define class names in the same order as in the training folder
 class_names = ['Early Blight', 'Late Blight', 'Healthy']

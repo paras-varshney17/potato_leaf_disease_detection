@@ -1,0 +1,95 @@
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 40px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+input[type="file"] {
+    margin: 20px 0;
+    background-color: #111;
+    color: #fff;
+    border: 1px solid #333;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+button {
+    padding: 10px 25px;
+    background: #00b894;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #55efc4;
+    color: black;
+}
+
+.preview-img {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+}
+
+.result-text h2 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.confidence-bar-container {
+    width: 100%;
+    background: #333;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.confidence-bar {
+    height: 30px;
+    background: linear-gradient(to right, #00ff99, #00ccff);
+    text-align: center;
+    line-height: 30px;
+    color: #000;
+    font-weight: bold;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #6c5ce7;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background-color: #a29bfe;
+    color: black;
+}
