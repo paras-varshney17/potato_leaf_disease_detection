@@ -1,23 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Prediction Result</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="glass-card">
+    <div class="card compact-portrait">
         <h1>🧪 Prediction Result</h1>
+
         <img src="{{ image_path }}" alt="Uploaded Image" class="preview-img">
 
         <div class="result-text">
-            <h2>Predicted: <span>{{ prediction }}</span></h2>
+            <h2>Predicted Class: <span>{{ prediction }}</span></h2>
+            <h3>Confidence Score: <span>{{ confidence }}%</span></h3>
         </div>
 
-        <div class="confidence-bar-container">
-            <div class="confidence-bar" style="width: {{ confidence }}%;">{{ confidence }}%</div>
+        <div class="confidence-bar-wrapper">
+            <div class="confidence-bar-fill" style="width: {{ confidence }}%;">
+                {{ confidence }}%
+            </div>
         </div>
 
-        <a href="/" class="back-btn">Try Another</a>
+        <a href="/" class="back-btn">🔁 Try Another</a>
     </div>
 </body>
 </html>
